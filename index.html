@@ -5,86 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<style>
-    *{margin: 0; padding: 0; box-sizing: border-box;}
-    body{
-        background-color: black;
-    }
-    form{
-        background-color: white;
-        max-width: 500px;
-        width: 70%;
-        padding: 20px;
-        position: absolute;
-        border: 1px solid red;
-        border-radius: 8.5px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    form h3{
-        text-align: center;
-        color: black;
-        font-family: sans-serif;
-    }
-    form input[type=text],
-    form input[type=password]{
-        width: 100%;
-        height: 45px;
-        border: 1px solid #ff0000;
-        border-radius: 15px;
-        padding-left: 10px;
-        margin: 10px 0;
-    }
-    form input[type=submit]{
-        width: 100%;
-        height: 30px;
-        cursor: pointer;
-        background-color: #000000;
-        color: white;
-        border: 0;
-        border-radius: 15px;
-        transition: 0.5s;
-    }
-    h5{
-        text-align: center;
-        font-family: sans-serif;
-    }
-    form input[type=submit]:hover{
-        background-color: rgb(49, 49, 49);
-        color: white;
-    }
-    form input[type=text]:focus{
-        outline: 0;
-    }
-    form input[type=password]:focus{
-        outline: 0;
-    }
-
-</style>
 <body>
     <form>
         <h5>Entrar em Contato</h5>
         <input id="email"type="text" nome="email" placeholder="Seu e-mail..." />
         <input id="password" type="password" nome="senha" placeholder="Sua senha..."/>
-        <input type="submit" nome=acao value="Enviar"/>
+        <input id="send" type="submit" nome=acao value="Enviar"/>
     </form>
-    <script>
-        var email = document.getElementById('email');
-        var email = document.getElementById('email');
-
-        email.addEventListener('focus',()=>{
-        email.style.borderColor = "#000000"});
-        email.addEventListener('blur',()=>{
-        email.style.borderColor = "#ff0000"});
-
-        password.addEventListener('focus',()=>{
-        password.style.borderColor = "#000000"});
-        password.addEventListener('blur',()=>{
-        password.style.borderColor = "#ff0000"});
-    
-    </script>
+    <script src="js/index.js"></script>
     
 </body>
 </html>
